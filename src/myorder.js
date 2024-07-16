@@ -13,7 +13,7 @@ useEffect(()=>{
     else{
 let user_id=localStorage.getItem("userid");
 // alert(user_id)
-axios.get("http://localhost:2000/getorder/"+user_id).then((reponse)=>{
+axios.get("https://deliveryclient-1.onrender.com/getorder/"+user_id).then((reponse)=>{
     // alert(reponse.data.msg);
     getOrder(reponse.data.userorder)
 
