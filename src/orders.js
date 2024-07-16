@@ -12,7 +12,7 @@ function Aorder()
             window.location.href="/login"
         }
         else{
-        axios.get("http://localhost:2000/getor").then((respo)=>{
+        axios.get("https://deliveryclient-1.onrender.com/getor").then((respo)=>{
 getOrder(respo.data.orders)
         })
     }
@@ -25,7 +25,7 @@ localStorage.removeItem("admin");
 // r.preventDefault();
 let st="done"
 
-axios.put("http://localhost:2000/putstat/"+r+"/"+st).then((rep)=>{
+axios.put("https://deliveryclient-1.onrender.com/putstat/"+r+"/"+st).then((rep)=>{
 alert(rep.data.msg);
 
 }
