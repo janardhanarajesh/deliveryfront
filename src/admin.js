@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Admin()
 {
 useEffect(()=>{
-    if(!localStorage.getItem("adim"))
+    if(!localStorage.getItem("admin"))
     {
         alert("only admin can access this page");
         window.location.href="/login"
