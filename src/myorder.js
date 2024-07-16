@@ -28,7 +28,7 @@ axios.get("https://deliveryclient-1.onrender.com/getorder/"+user_id).then((repon
         return(
             <div>
                 <div>
-                <img src={`http://localhost:2000/images/${ele.image}`} className="imgh"/>
+                <img src={`https://deliveryclient-1.onrender.com/images/${ele.image}`} className="imgh"/>
                 
                 </div>
                 <div>
