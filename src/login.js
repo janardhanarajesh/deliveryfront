@@ -26,7 +26,7 @@ alert("invalid password")
 }
     }
     else{
-        axios.get("http://localhost:2000/loguser/"+useor+"/"+pass).then((reponse)=>{
+        axios.get("https://deliveryclient-1.onrender.com/loguser/"+useor+"/"+pass).then((reponse)=>{
             if(reponse.data.msg=="found")
             {
                 localStorage.setItem("userid",reponse.data.useid);
