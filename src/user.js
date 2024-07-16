@@ -14,7 +14,7 @@ function User()
             window.location.href="/login"
         }
         else{
-            axios.get("http://localhost:2000/getpro").then((resp)=>{
+            axios.get("https://deliveryclient-1.onrender.com/getpro").then((resp)=>{
                 getProduct(resp.data.proinfo)
             })
             // let qy=document.getElementById("qyt").value;
@@ -66,7 +66,7 @@ let q=Qty*t;
             phn:pn
 
         }
-        axios.post("http://localhost:2000/postorder",order).then((respo)=>{
+        axios.post("https://deliveryclient-1.onrender.com/postorder",order).then((respo)=>{
             if(respo.data.msg=="done")
             {
                 alert("order placed successfully");
@@ -97,7 +97,7 @@ product.map((ele,i)=>{
         
         <center>
         <div className="pro">
-               <img src={`http://localhost:2000/images/${ele.profile}`} className="imgh"/>
+               <img src={`https://deliveryclient-1.onrender.com/images/${ele.profile}`} className="imgh"/>
                <br/>
                <b>
                 {ele.item}
