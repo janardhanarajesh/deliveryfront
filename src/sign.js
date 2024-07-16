@@ -17,10 +17,10 @@ function Sign()
             address:addr,
             phnumber:phn
         }
-        axios.get("http://localhost:2000/getuser/"+name+"/"+phn+"/"+mail).then((response)=>{
+        axios.get("https://deliveryclient-1.onrender.com/getuser/"+name+"/"+phn+"/"+mail).then((response)=>{
             if(response.data.msg=="no")
             {
-                axios.post("http://localhost:2000/signup",userinfo).then((res)=>{
+                axios.post("https://deliveryclient-1.onrender.com/signup",userinfo).then((res)=>{
                     if(res.data.msg=="success")
                     {
         alert("registered successfully")
