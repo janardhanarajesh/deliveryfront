@@ -17,7 +17,7 @@ profilepicture.append('item',itemname);
 profilepicture.append('disc',discription);
 profilepicture.append('cost',cost);
 
-axios.post("http://localhost:2000/addproduct",profilepicture).then((resp)=>{
+axios.post("https://deliveryclient-1.onrender.com/addproduct",profilepicture).then((resp)=>{
 if(resp.data.msg=="done")
 {
     alert("added success fully");
@@ -29,14 +29,14 @@ else{
 })
     }
     useEffect(()=>{
-        axios.get("http://localhost:2000/getpro").then((reps)=>{
+        axios.get("https://deliveryclient-1.onrender.com/getpro").then((reps)=>{
             
             addproduct(reps.data.proinfo);
         })
     })
     const delpro=(e,x)=>{
 // e.preventDefault();
-axios.delete("http://localhost:2000/delpro/"+e).then((resp)=>{
+axios.delete("https://deliveryclient-1.onrender.com/delpro/"+e).then((resp)=>{
 alert(resp.data.msg)
 })
     }
@@ -59,7 +59,7 @@ alert(resp.data.msg)
             return(
                 <center>
                 <div className="pro">
-                    <img src={`http://localhost:2000/images/${ele.profile}`} className="imgh"/>
+                    <img src={`https://deliveryclient-1.onrender.com/images/${ele.profile}`} className="imgh"/>
                     <br/>
                 <b style={{fontSize:"30px"}}>
                   {ele.item}
