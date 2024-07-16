@@ -56,7 +56,7 @@ alert(rep.data.msg);
                             <br/>
                             <b>address:</b>  <Link to={`https://www.google.com/search?q=${ele.place}`} target="new">{ele.place}</Link>
                             <br/>
-                            <b>custmor number:</b>  {ele.phn}
+                            <b>custmor number:</b>  <Link to={`tel:${ele.phn}`}>{ele.phn}</Link>
                             <br/>
                             <br />
 
