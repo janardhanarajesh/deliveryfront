@@ -9,6 +9,7 @@ import Addnew from './newpro';
 import User from './user';
 import Myorder from './myorder';
 import Aorder from './orders';
+import TC from "./T&C"
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,8 @@ function App() {
    <Menu/>
    <Routes>
    <Route path='/sign' element={<Sign/>}/>
+     <Route path='/tc' element={<TC/>}/>
+
    <Route path='/admin' element={<Admin/>}/>
    <Route path='/addpro' element={<Addnew/>}/>
    <Route path='/orderpro' element={<User/>}/>
