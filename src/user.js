@@ -85,12 +85,12 @@ let q=Qty*t;
     }
     }
     return(
-        <div>
+        <div id="userdiv">
            <Link to="/myorder"> <button>my orders</button></Link>
 
-            <div>
-                {localStorage.getItem("user")}
-            </div>
+            <div id="userid">
+            <i class="fa-regular fa-circle-user"></i>    <h3>{localStorage.getItem("user")}</h3>
+            </div> 
 {
 product.map((ele,i)=>{
     return(
