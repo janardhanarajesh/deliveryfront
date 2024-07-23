@@ -38,8 +38,11 @@ function Sign()
        
     }
     return(
-        <div>
-            <form onSubmit={register}>
+        <center>
+        <div id="sup">
+            <center>
+                <h3>sign up</h3>
+            <form onSubmit={register} >
                 <input type="text" placeholder="username" id="name" required/>
                 <br/>
                 <input type="password" placeholder="password"  id="pass" required/>
@@ -52,7 +55,9 @@ function Sign()
                 <br/>
                 <button type="submit">submit</button>
             </form>
+            </center>
         </div>
+        </center>
     )
 
 
