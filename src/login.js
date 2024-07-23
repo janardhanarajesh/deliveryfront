@@ -47,7 +47,9 @@ localStorage.setItem("mail",reponse.data.mail)
     }
 }
     return(
-        <div>
+        <center>
+        <div id="sin">
+            <h3>sign in</h3>
 <form onSubmit={loguser}>
     <input type="text" placeholder="username" id="user" required/>
     <br/>
@@ -56,6 +58,7 @@ localStorage.setItem("mail",reponse.data.mail)
     <input type="submit" value="login"/>
 </form>
         </div>
+        </center>
     )
 }
 export default Login
