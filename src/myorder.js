@@ -22,7 +22,7 @@ axios.get("https://deliveryclient-1.onrender.com/getorder/"+user_id).then((repon
     }
 })
     return(
-        <div>
+        <div id="myor">
 {
     order.map((ele,i)=>{
         return(
